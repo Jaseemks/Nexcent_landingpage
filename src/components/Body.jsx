@@ -24,18 +24,22 @@ export const Body = () => {
 
                 </div>
                 <div id="item2" className="carousel-item w-full">
-                    <img
-                        src=""
-                        className="w-full"
-                        alt="Carousel 2"
-                    />
+                
                 </div>
                 <div id="item3" className="carousel-item w-full">
-                    <img
-                        src=""
-                        className="w-full"
-                        alt="Carousel 3"
-                    />
+                <div className='flex flex-col space-y-4 px-20'>
+                        <span className='text-8xl text-[#4D4D4D]'>Lessons and insights</span>
+                        <span className='text-8xl text-[#66BB69]'>from 8 years</span>
+                        <span className='text-lg'>Where to grow your business as a photographer: site or social media?</span>
+                        <button className="btn bg-[#66BB69] text-white w-29">Register</button>
+                    </div>
+                    <div className='sec2'>
+                        <img
+                            src="/assets/Illustration.png"
+                            className="w-full"
+                            alt="Carousel 1"
+                        />
+                    </div>
                 </div>
             </div>
             <div className="flex w-full justify-center gap-2 py-2">
