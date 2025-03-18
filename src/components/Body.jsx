@@ -8,11 +8,11 @@ export const Body = () => {
         <div>
             <div className="carousel w-full bg-[#F5F7FA] py-20">
                 <div id="item1" className="carousel-item w-full">
-                    <div className='flex flex-col space-y-4 px-20'>
-                        <span className='text-8xl text-[#4D4D4D]'>Lessons and insights</span>
-                        <span className='text-8xl text-[#66BB69]'>from 8 years</span>
+                <div className='flex flex-col space-y-4 px-5 md:px-20'>
+                        <span className='text-4xl md:text-8xl text-[#4D4D4D]'>Lessons and insights</span>
+                        <span className='text-4xl md:text-8xl text-[#66BB69]'>from 8 years</span>
                         <span className='text-lg'>Where to grow your business as a photographer: site or social media?</span>
-                        <button className="btn bg-[#66BB69] text-white w-29">Register</button>
+                        <button className="btn bg-[#66BB69] w-29 text-white">Register</button>
                     </div>
                     <div className='sec2'>
                         <img
