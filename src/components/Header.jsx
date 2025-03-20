@@ -1,45 +1,4 @@
-// import React from 'react'
-
-// export const Header = () => {
-//     return (
-//         <div>
-//             <div className="navbar bg-[#F5F7FA] p-4">
-//                 <div className="flex flex-row items-center justify-between w-full">
-//                     <img className="logo" src="/assets/Logo.png" alt="Logo" />
-
-//                     <div className="hidden lg:flex justify-end space-x-32 items-center w-full">
-//                         <a href="#home">Home</a>
-//                         <a href="#service">Service</a>
-//                         <a href="#feature">Feature</a>
-//                         <a href="#product">Product</a>
-//                         <a href="#testmonial">Testimonial</a>
-//                         <a href="#faq">FAQ</a>
-
-//                         <div className='flex justify-end space-x-8 items-center'>
-//                             <a href="#login" className='text-[#66BB69]'>Login</a>
-//                             <button className="btn bg-[#66BB69] text-white">Sign up</button>
-//                         </div>
-//                     </div>
-
-//                 </div>
-//                 <div className="lg:hidden flex flex-col items-center space-y-4 mt-4">
-//                     <a href="#home">Home</a>
-//                     <a href="#service">Service</a>
-//                     <a href="#feature">Feature</a>
-//                     <a href="#product">Product</a>
-//                     <a href="#testmonial">Testimonial</a>
-//                     <a href="#faq">FAQ</a>
-
-//                     <a href="#login" className='text-[#66BB69]'>Login</a>
-//                     <button className="btn bg-[#66BB69] text-white">Sign up</button>
-//                 </div>
-//             </div>
-//         </div>
-//     )
-// }
-
-
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,8 +12,6 @@ export const Header = () => {
             <div className="navbar bg-[#F5F7FA] p-4">
                 <div className="flex flex-row items-center justify-between w-full">
                     <img className="logo" src="/assets/Logo.png" alt="Logo" />
-
-                    {/* Desktop Navigation */}
                     <div className="hidden lg:flex justify-end space-x-32 items-center w-full">
                         <a href="#home">Home</a>
                         <a href="#service">Service</a>
@@ -68,8 +25,6 @@ export const Header = () => {
                             <button className="btn bg-[#66BB69] text-white">Sign up</button>
                         </div>
                     </div>
-
-                    {/* Mobile Hamburger Menu */}
                     <div className="lg:hidden flex items-center">
                         <button onClick={toggleMenu} className="text-[#66BB69]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -78,22 +33,21 @@ export const Header = () => {
                         </button>
                     </div>
                 </div>
-
-                {/* Mobile Menu */}
-                {isMenuOpen && (
-                    <div className="lg:hidden flex flex-col items-center space-y-4 mt-4">
-                        <a href="#home">Home</a>
-                        <a href="#service">Service</a>
-                        <a href="#feature">Feature</a>
-                        <a href="#product">Product</a>
-                        <a href="#testmonial">Testimonial</a>
-                        <a href="#faq">FAQ</a>
-
-                        <a href="#login" className='text-[#66BB69]'>Login</a>
-                        <button className="btn bg-[#66BB69] text-white">Sign up</button>
-                    </div>
-                )}
             </div>
+            {isMenuOpen && (
+                <div className="lg:hidden bg-[#F5F7FA] w-full py-4">
+                    <ul className="flex flex-col items-center space-y-4">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#feature">Feature</a></li>
+                        <li><a href="#product">Product</a></li>
+                        <li><a href="#testmonial">Testimonial</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#login" className='text-[#66BB69]'>Login</a></li>
+                        <li><button className="btn bg-[#66BB69] text-white">Sign up</button></li>
+                    </ul>
+                </div>
+            )}
         </div>
     );
 };

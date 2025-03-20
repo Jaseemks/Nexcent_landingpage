@@ -53,8 +53,7 @@ export const MangCommunity = () => {
         </div>
     </div>
 </div>
-
-<div className='flex flex-col md:flex-row w-full bg-[#F5F7FA] h-64 py-8'>
+<div className='flex flex-col md:flex-row w-full bg-[#F5F7FA] h-auto sm:h-[400px] md:h-[256px] lg:h-[256px] py-8'>
     <div className='flex flex-col w-full md:w-1/2 justify-center items-center text-center md:text-left'>
         <span className='text-3xl md:text-4xl font-bold text-[#4D4D4D]'>Helping a local</span>
         <span className='text-3xl md:text-4xl font-bold text-[#43A046]'>Business reinvent itself</span>
